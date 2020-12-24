@@ -59,7 +59,7 @@ public class Day24 {
         return HexDirection.adjacent.map { tile + $0 }
     }
     
-    var floorImageSize = CGSize(width: 4096, height: 4096)
+    var floorImageSize = CGSize(width: 4600, height: 4600)
 
     @discardableResult
     public func draw(_ floor: Floor) -> UIImage {

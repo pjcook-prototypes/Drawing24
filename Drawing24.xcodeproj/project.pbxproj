@@ -19,6 +19,7 @@
 		2E3BD57D2594776600F13E60 /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD57A2594776600F13E60 /* Day24.swift */; };
 		2E3BD57E2594776600F13E60 /* Pointf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD57B2594776600F13E60 /* Pointf.swift */; };
 		2E3BD594259477AD00F13E60 /* Day24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD5822594777900F13E60 /* Day24Tests.swift */; };
+		2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */ = {isa = PBXBuildFile; fileRef = 2E3BD5A22594ABBD00F13E60 /* Day24.input */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2E3BD57A2594776600F13E60 /* Day24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day24.swift; sourceTree = "<group>"; };
 		2E3BD57B2594776600F13E60 /* Pointf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointf.swift; sourceTree = "<group>"; };
 		2E3BD5822594777900F13E60 /* Day24Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day24Tests.swift; sourceTree = "<group>"; };
+		2E3BD5A22594ABBD00F13E60 /* Day24.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day24.input; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				2E3BD5462594775100F13E60 /* AppDelegate.swift */,
+				2E3BD5A12594AB0000F13E60 /* Day24 */,
 				2E3BD5482594775100F13E60 /* SceneDelegate.swift */,
 				2E3BD54A2594775100F13E60 /* ViewController.swift */,
 				2E3BD54C2594775100F13E60 /* Main.storyboard */,
-				2E3BD57A2594776600F13E60 /* Day24.swift */,
-				2E3BD57B2594776600F13E60 /* Pointf.swift */,
-				2E3BD5792594776600F13E60 /* String+Additions.swift */,
 				2E3BD54F2594775300F13E60 /* Assets.xcassets */,
 				2E3BD5512594775300F13E60 /* LaunchScreen.storyboard */,
 				2E3BD5542594775300F13E60 /* Info.plist */,
@@ -138,6 +138,17 @@
 				2E3BD56A2594775300F13E60 /* Info.plist */,
 			);
 			path = Drawing24UITests;
+			sourceTree = "<group>";
+		};
+		2E3BD5A12594AB0000F13E60 /* Day24 */ = {
+			isa = PBXGroup;
+			children = (
+				2E3BD57A2594776600F13E60 /* Day24.swift */,
+				2E3BD57B2594776600F13E60 /* Pointf.swift */,
+				2E3BD5792594776600F13E60 /* String+Additions.swift */,
+				2E3BD5A22594ABBD00F13E60 /* Day24.input */,
+			);
+			name = Day24;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3BD5532594775300F13E60 /* LaunchScreen.storyboard in Resources */,
+				2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */,
 				2E3BD5502594775300F13E60 /* Assets.xcassets in Resources */,
 				2E3BD54E2594775100F13E60 /* Main.storyboard in Resources */,
 			);
