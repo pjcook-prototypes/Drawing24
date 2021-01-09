@@ -54,8 +54,16 @@ class ViewController2: UIViewController {
             explosionView.animationImages = self.explosionImages
             explosionView.animationDuration = 1
             explosionView.animationRepeatCount = 1
-            let adjustment = self.imageView.frame.height / CGFloat(size.y)
-            let cgPoint = CGPoint(x: CGFloat(position.x) * adjustment, y: CGFloat(position.y) * adjustment)
+            var adjustment: CGFloat = 0
+            var extraX: CGFloat = 0, extraY: CGFloat = 0
+            if self.imageView.frame.height > self.imageView.frame.width {
+                extraY = (self.imageView.frame.height - self.imageView.frame.width) / 2
+                adjustment = self.imageView.frame.width / CGFloat(size.x)
+            } else {
+                adjustment = self.imageView.frame.height / CGFloat(size.y)
+                extraX = (self.imageView.frame.width - self.imageView.frame.height) / 2
+            }
+            let cgPoint = CGPoint(x: CGFloat(position.x) * adjustment + extraX, y: CGFloat(position.y) * adjustment + extraY)
             explosionView.center = cgPoint
             self.view.addSubview(explosionView)
             explosionView.startAnimating()

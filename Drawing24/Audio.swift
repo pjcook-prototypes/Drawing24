@@ -53,7 +53,6 @@ func playSound(_ name: SoundName) {
     
     if SoundManager.shared.isPlaying(url, channel: AudioChannel.soundEffects) {
         SoundManager.shared.clearChannel(AudioChannel.soundEffects)
-    } else {
-        try? SoundManager.shared.play(url, channel: AudioChannel.soundEffects, volume: 1, pan: 0)
     }
+    try? SoundManager.shared.play(url, channel: AudioChannel.soundEffects, volume: 1, pan: 0)
 }
