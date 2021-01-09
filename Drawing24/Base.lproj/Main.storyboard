@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdW-5U-xyF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller2-->
+        <scene sceneID="S6d-Y7-2st">
+            <objects>
+                <viewController id="jdW-5U-xyF" customClass="ViewController2" customModule="Drawing24" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VhI-rZ-BHf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-Ip-vz5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.70588235290000001" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLT-lv-1Rp">
+                                <rect key="frame" x="16" y="60" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="93D-fq-SRC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gLT-lv-1Rp" firstAttribute="centerX" secondItem="VhI-rZ-BHf" secondAttribute="centerX" id="4at-bR-qUW"/>
+                            <constraint firstItem="93D-fq-SRC" firstAttribute="bottom" secondItem="fc9-Ip-vz5" secondAttribute="bottom" id="BnO-XT-cZx"/>
+                            <constraint firstItem="fc9-Ip-vz5" firstAttribute="top" secondItem="93D-fq-SRC" secondAttribute="top" id="GLE-sI-GWh"/>
+                            <constraint firstItem="93D-fq-SRC" firstAttribute="trailing" secondItem="fc9-Ip-vz5" secondAttribute="trailing" id="T2r-G5-xme"/>
+                            <constraint firstItem="gLT-lv-1Rp" firstAttribute="leading" secondItem="93D-fq-SRC" secondAttribute="leading" constant="16" id="cwF-33-KYY"/>
+                            <constraint firstItem="gLT-lv-1Rp" firstAttribute="top" secondItem="93D-fq-SRC" secondAttribute="top" constant="16" id="g4p-Oh-pWs"/>
+                            <constraint firstItem="fc9-Ip-vz5" firstAttribute="leading" secondItem="93D-fq-SRC" secondAttribute="leading" id="pqN-6g-449"/>
+                            <constraint firstItem="93D-fq-SRC" firstAttribute="trailing" secondItem="gLT-lv-1Rp" secondAttribute="trailing" constant="16" id="zo3-5M-X0i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fc9-Ip-vz5" id="vm3-Ri-GI3"/>
+                        <outlet property="label" destination="gLT-lv-1Rp" id="abK-Qs-11h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4I-ab-ItW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="57"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -46,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="95"/>
+            <point key="canvasLocation" x="696" y="226"/>
         </scene>
     </scenes>
     <resources>

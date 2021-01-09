@@ -67,8 +67,6 @@ public class Day24 {
         let blackImage = UIImage(named: "black")!
         let whiteImage = UIImage(named: "white")!
         let imageSize = blackImage.size
-//        var maxX = CGFloat(0)
-//        var maxY = CGFloat(0)
         let image = renderer.image { context in
             for tile in floor {
                 let x = (imageSize.width / 2 * CGFloat(tile.key.x)) + (imageSize.width / 2) + (floorImageSize.width / 2)
@@ -79,17 +77,8 @@ public class Day24 {
                 case .black: context.cgContext.draw(blackImage.cgImage!, in: rect)
                 case .white: context.cgContext.draw(whiteImage.cgImage!, in: rect)
                 }
-                
-//                if x + (imageSize.width / 2) > maxX {
-//                    maxX = x + (imageSize.width / 2)
-//                }
-//                if y + (imageSize.height / 2) > maxY {
-//                    maxY = y + (imageSize.height / 2)
-//                }
             }
         }
-//        print(maxX, maxY)
-//        floorImageSize = CGSize(width: maxX + 200, height: maxY + 200)
         displayImage?(image)
         return image
     }

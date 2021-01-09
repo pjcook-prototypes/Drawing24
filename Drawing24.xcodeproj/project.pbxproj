@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E09F97025A90F3B00C3269F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F96F25A90F3B00C3269F /* ViewController2.swift */; };
+		2E09F97625A90F8E00C3269F /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F97425A90F8E00C3269F /* Day13.swift */; };
+		2E09F97725A90F8E00C3269F /* Day13.input in Resources */ = {isa = PBXBuildFile; fileRef = 2E09F97525A90F8E00C3269F /* Day13.input */; };
+		2E09F97C25A9104000C3269F /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F97B25A9104000C3269F /* Point.swift */; };
+		2E09F98125A9105B00C3269F /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F98025A9105B00C3269F /* Ring.swift */; };
+		2E09F9BB25A9ACD100C3269F /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E09F9BA25A9ACD100C3269F /* explosion.wav */; };
+		2E09F9C825A9B2AA00C3269F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F9C725A9B2AA00C3269F /* SoundManager.swift */; };
+		2E09F9CD25A9B2E200C3269F /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F9CC25A9B2E200C3269F /* Audio.swift */; };
 		2E3BD5472594775100F13E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD5462594775100F13E60 /* AppDelegate.swift */; };
 		2E3BD5492594775100F13E60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD5482594775100F13E60 /* SceneDelegate.swift */; };
 		2E3BD54B2594775100F13E60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD54A2594775100F13E60 /* ViewController.swift */; };
@@ -40,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E09F96F25A90F3B00C3269F /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		2E09F97425A90F8E00C3269F /* Day13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		2E09F97525A90F8E00C3269F /* Day13.input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day13.input; sourceTree = "<group>"; };
+		2E09F97B25A9104000C3269F /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		2E09F98025A9105B00C3269F /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		2E09F9BA25A9ACD100C3269F /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		2E09F9C725A9B2AA00C3269F /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		2E09F9CC25A9B2E200C3269F /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2E3BD5432594775100F13E60 /* Drawing24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3BD5462594775100F13E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E3BD5482594775100F13E60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +129,11 @@
 				2E3BD5A12594AB0000F13E60 /* Day24 */,
 				2E3BD5482594775100F13E60 /* SceneDelegate.swift */,
 				2E3BD54A2594775100F13E60 /* ViewController.swift */,
+				2E09F96F25A90F3B00C3269F /* ViewController2.swift */,
+				2E09F9CC25A9B2E200C3269F /* Audio.swift */,
+				2E09F9C725A9B2AA00C3269F /* SoundManager.swift */,
 				2E3BD54C2594775100F13E60 /* Main.storyboard */,
+				2E09F9BA25A9ACD100C3269F /* explosion.wav */,
 				2E3BD54F2594775300F13E60 /* Assets.xcassets */,
 				2E3BD5512594775300F13E60 /* LaunchScreen.storyboard */,
 				2E3BD5542594775300F13E60 /* Info.plist */,
@@ -144,9 +164,13 @@
 			isa = PBXGroup;
 			children = (
 				2E3BD57A2594776600F13E60 /* Day24.swift */,
+				2E09F97B25A9104000C3269F /* Point.swift */,
 				2E3BD57B2594776600F13E60 /* Pointf.swift */,
 				2E3BD5792594776600F13E60 /* String+Additions.swift */,
+				2E09F98025A9105B00C3269F /* Ring.swift */,
 				2E3BD5A22594ABBD00F13E60 /* Day24.input */,
+				2E09F97525A90F8E00C3269F /* Day13.input */,
+				2E09F97425A90F8E00C3269F /* Day13.swift */,
 			);
 			name = Day24;
 			sourceTree = "<group>";
@@ -255,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3BD5532594775300F13E60 /* LaunchScreen.storyboard in Resources */,
+				2E09F9BB25A9ACD100C3269F /* explosion.wav in Resources */,
 				2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */,
+				2E09F97725A90F8E00C3269F /* Day13.input in Resources */,
 				2E3BD5502594775300F13E60 /* Assets.xcassets in Resources */,
 				2E3BD54E2594775100F13E60 /* Main.storyboard in Resources */,
 			);
@@ -282,11 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E09F9CD25A9B2E200C3269F /* Audio.swift in Sources */,
+				2E09F97625A90F8E00C3269F /* Day13.swift in Sources */,
+				2E09F97025A90F3B00C3269F /* ViewController2.swift in Sources */,
 				2E3BD54B2594775100F13E60 /* ViewController.swift in Sources */,
 				2E3BD57E2594776600F13E60 /* Pointf.swift in Sources */,
 				2E3BD5472594775100F13E60 /* AppDelegate.swift in Sources */,
+				2E09F97C25A9104000C3269F /* Point.swift in Sources */,
 				2E3BD57C2594776600F13E60 /* String+Additions.swift in Sources */,
+				2E09F98125A9105B00C3269F /* Ring.swift in Sources */,
 				2E3BD57D2594776600F13E60 /* Day24.swift in Sources */,
+				2E09F9C825A9B2AA00C3269F /* SoundManager.swift in Sources */,
 				2E3BD5492594775100F13E60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
