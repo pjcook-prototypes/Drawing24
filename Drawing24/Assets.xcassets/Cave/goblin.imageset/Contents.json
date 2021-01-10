@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Idle_000.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "goblin@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

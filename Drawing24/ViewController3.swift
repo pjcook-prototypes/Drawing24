@@ -32,7 +32,7 @@ class ViewController3: UIViewController {
         super.viewDidLoad()
         day.drawBoard = drawBoard
         day.displayLevel = displayLevel
-        day.explosion = explosion
+//        day.explosion = explosion
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -73,7 +73,7 @@ class ViewController3: UIViewController {
     private func animationTick() {
         guard animating, index < turns.count else { return }
         self.index += 1
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
             if self.animating {
                 self.animationTick()
             }
@@ -113,9 +113,9 @@ class ViewController3: UIViewController {
                     let imageView = UIImageView(frame: CGRect(x: CGFloat(x) * blockSize + addX, y: CGFloat(y) * blockSize + addY, width: blockSize, height: blockSize))
                     imageView.contentMode = .scaleToFill
                     imageView.image = player.race == .elf ? elfImage : goblinImage
-                    let healthBar = UIView(frame: CGRect(x: 0, y: 0, width: blockSize, height: 4))
+                    let healthBar = UIView(frame: CGRect(x: 2, y: 2, width: blockSize-4, height: 3))
                     healthBar.backgroundColor = .black
-                    let health = UIView(frame: CGRect(x: 0, y: 0, width: blockSize / 200.0 * CGFloat(player.health), height: 4))
+                    let health = UIView(frame: CGRect(x: 0, y: 0, width: (blockSize-4) / 200.0 * CGFloat(player.health), height: 3))
                     health.backgroundColor = .red
                     healthBar.addSubview(health)
                     imageView.addSubview(healthBar)
@@ -142,22 +142,19 @@ class ViewController3: UIViewController {
             let addY = (contentHeight - (blockSize * boardTileHeight)) / 2
             let tiles = board.getTiles()
             let wallImage = UIImage(named: "cristal-wall")!
+            let floorImage = UIImage(named: "Floor6")!
             
             for y in (0..<board.size.y) {
                 for x in (0..<board.size.x) {
                     let point = Point(x: x, y: y)
-                    if tiles[point] == .wall {
-                        let imageView = UIImageView(frame: CGRect(x: CGFloat(x) * blockSize + addX, y: CGFloat(y) * blockSize + addY, width: blockSize, height: blockSize))
-                        imageView.contentMode = .scaleToFill
-                        imageView.image = wallImage
-                        self.contentView.addSubview(imageView)
-                    }
+                    let imageView = UIImageView(frame: CGRect(x: CGFloat(x) * blockSize + addX, y: CGFloat(y) * blockSize + addY, width: blockSize, height: blockSize))
+                    imageView.contentMode = .scaleToFill
+                    imageView.image = tiles[point] == .wall ? wallImage : floorImage
+                    self.contentView.insertSubview(imageView, belowSubview: self.playersView)
                 }
             }
             
-            if !self.manualUpdate {
-                self.index = self.turns.count-1
-            }
+            self.index = 0
         }
     }
     
@@ -211,7 +208,7 @@ class ViewController3: UIViewController {
         running = true
         turns = []
         index = 0
-        manualUpdate = false
+        manualUpdate = true
         label.text = "Running"
         DispatchQueue.global().async {
             let input = self.getInput("Day15.input")
