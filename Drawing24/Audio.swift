@@ -9,6 +9,7 @@ enum AudioChannel {
 
 enum SoundName: String, CaseIterable {
     case explosion = "explosion.wav"
+    case die = "die.mp3"
 }
 
 extension SoundName {

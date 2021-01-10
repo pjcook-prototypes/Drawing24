@@ -28,6 +28,10 @@
 		2E3BD57E2594776600F13E60 /* Pointf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD57B2594776600F13E60 /* Pointf.swift */; };
 		2E3BD594259477AD00F13E60 /* Day24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BD5822594777900F13E60 /* Day24Tests.swift */; };
 		2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */ = {isa = PBXBuildFile; fileRef = 2E3BD5A22594ABBD00F13E60 /* Day24.input */; };
+		2E92840D25AB79120074AFE0 /* Day15.input in Resources */ = {isa = PBXBuildFile; fileRef = 2E92840B25AB79120074AFE0 /* Day15.input */; };
+		2E92840E25AB79120074AFE0 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92840C25AB79120074AFE0 /* Day15.swift */; };
+		2E92841325AB791D0074AFE0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92841225AB791D0074AFE0 /* ViewController3.swift */; };
+		2E92841825AB7DC30074AFE0 /* die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E92841725AB7DC30074AFE0 /* die.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		2E3BD57B2594776600F13E60 /* Pointf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointf.swift; sourceTree = "<group>"; };
 		2E3BD5822594777900F13E60 /* Day24Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day24Tests.swift; sourceTree = "<group>"; };
 		2E3BD5A22594ABBD00F13E60 /* Day24.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day24.input; sourceTree = "<group>"; };
+		2E92840B25AB79120074AFE0 /* Day15.input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day15.input; sourceTree = "<group>"; };
+		2E92840C25AB79120074AFE0 /* Day15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
+		2E92841225AB791D0074AFE0 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		2E92841725AB7DC30074AFE0 /* die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = die.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +138,12 @@
 				2E3BD5482594775100F13E60 /* SceneDelegate.swift */,
 				2E3BD54A2594775100F13E60 /* ViewController.swift */,
 				2E09F96F25A90F3B00C3269F /* ViewController2.swift */,
+				2E92841225AB791D0074AFE0 /* ViewController3.swift */,
 				2E09F9CC25A9B2E200C3269F /* Audio.swift */,
 				2E09F9C725A9B2AA00C3269F /* SoundManager.swift */,
 				2E3BD54C2594775100F13E60 /* Main.storyboard */,
 				2E09F9BA25A9ACD100C3269F /* explosion.wav */,
+				2E92841725AB7DC30074AFE0 /* die.mp3 */,
 				2E3BD54F2594775300F13E60 /* Assets.xcassets */,
 				2E3BD5512594775300F13E60 /* LaunchScreen.storyboard */,
 				2E3BD5542594775300F13E60 /* Info.plist */,
@@ -171,6 +181,8 @@
 				2E3BD5A22594ABBD00F13E60 /* Day24.input */,
 				2E09F97525A90F8E00C3269F /* Day13.input */,
 				2E09F97425A90F8E00C3269F /* Day13.swift */,
+				2E92840B25AB79120074AFE0 /* Day15.input */,
+				2E92840C25AB79120074AFE0 /* Day15.swift */,
 			);
 			name = Day24;
 			sourceTree = "<group>";
@@ -281,7 +293,9 @@
 				2E3BD5532594775300F13E60 /* LaunchScreen.storyboard in Resources */,
 				2E09F9BB25A9ACD100C3269F /* explosion.wav in Resources */,
 				2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */,
+				2E92840D25AB79120074AFE0 /* Day15.input in Resources */,
 				2E09F97725A90F8E00C3269F /* Day13.input in Resources */,
+				2E92841825AB7DC30074AFE0 /* die.mp3 in Resources */,
 				2E3BD5502594775300F13E60 /* Assets.xcassets in Resources */,
 				2E3BD54E2594775100F13E60 /* Main.storyboard in Resources */,
 			);
@@ -315,10 +329,12 @@
 				2E3BD57E2594776600F13E60 /* Pointf.swift in Sources */,
 				2E3BD5472594775100F13E60 /* AppDelegate.swift in Sources */,
 				2E09F97C25A9104000C3269F /* Point.swift in Sources */,
+				2E92840E25AB79120074AFE0 /* Day15.swift in Sources */,
 				2E3BD57C2594776600F13E60 /* String+Additions.swift in Sources */,
 				2E09F98125A9105B00C3269F /* Ring.swift in Sources */,
 				2E3BD57D2594776600F13E60 /* Day24.swift in Sources */,
 				2E09F9C825A9B2AA00C3269F /* SoundManager.swift in Sources */,
+				2E92841325AB791D0074AFE0 /* ViewController3.swift in Sources */,
 				2E3BD5492594775100F13E60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
