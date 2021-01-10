@@ -75,6 +75,7 @@ public struct Day15 {
                     guard let player = players.first(where: { $0.id == player.id }) else { continue }
                     let (updatedPlayer, complete) = update(player)
                     players.update(with: updatedPlayer)
+                    displayLevel?(self)
                     if !complete {
                         fullRound = false
                         break
