@@ -32,6 +32,7 @@
 		2E92840E25AB79120074AFE0 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92840C25AB79120074AFE0 /* Day15.swift */; };
 		2E92841325AB791D0074AFE0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92841225AB791D0074AFE0 /* ViewController3.swift */; };
 		2E92841825AB7DC30074AFE0 /* die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E92841725AB7DC30074AFE0 /* die.mp3 */; };
+		2E92842C25ABA5980074AFE0 /* Day15-2.input in Resources */ = {isa = PBXBuildFile; fileRef = 2E92842B25ABA5980074AFE0 /* Day15-2.input */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		2E92840C25AB79120074AFE0 /* Day15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		2E92841225AB791D0074AFE0 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		2E92841725AB7DC30074AFE0 /* die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = die.mp3; sourceTree = "<group>"; };
+		2E92842B25ABA5980074AFE0 /* Day15-2.input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Day15-2.input"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				2E09F97525A90F8E00C3269F /* Day13.input */,
 				2E09F97425A90F8E00C3269F /* Day13.swift */,
 				2E92840B25AB79120074AFE0 /* Day15.input */,
+				2E92842B25ABA5980074AFE0 /* Day15-2.input */,
 				2E92840C25AB79120074AFE0 /* Day15.swift */,
 			);
 			name = Day24;
@@ -292,6 +295,7 @@
 			files = (
 				2E3BD5532594775300F13E60 /* LaunchScreen.storyboard in Resources */,
 				2E09F9BB25A9ACD100C3269F /* explosion.wav in Resources */,
+				2E92842C25ABA5980074AFE0 /* Day15-2.input in Resources */,
 				2E3BD5A32594ABBD00F13E60 /* Day24.input in Resources */,
 				2E92840D25AB79120074AFE0 /* Day15.input in Resources */,
 				2E09F97725A90F8E00C3269F /* Day13.input in Resources */,

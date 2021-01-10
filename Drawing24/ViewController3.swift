@@ -211,7 +211,7 @@ class ViewController3: UIViewController {
         manualUpdate = true
         label.text = "Running"
         DispatchQueue.global().async {
-            let input = self.getInput("Day15.input")
+            let input = self.getInput("Day15-2.input")
             _ = self.day.part1(input)
             DispatchQueue.main.async {
                 self.label.text = "Finished"
